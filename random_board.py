@@ -25,12 +25,12 @@ def print_2d_array(arr):
 
 
 def find_sum(arr):
-    sum = 0
+    sum_of_arr = 0
     for x in arr:
         for y in x:
-            sum += y
+            sum_of_arr += y
 
-    print('The sum is ' + str(sum))
+    print('The sum is ' + str(sum_of_arr))
 
 
 if __name__ == '__main__':
