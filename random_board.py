@@ -3,15 +3,13 @@ import random
 
 
 def main():
-    arr = []
-    num_row = 10
-    num_col = 10
+    # initialize a 10 x 10 array/list
+    arr = [[0 for y in range(10)] for x in range(10)]
 
-    for i in range(num_row):
-        row = []
-        for j in range(num_col):
-            row.append(random.randint(0, 9))
-        arr.append(row)
+    # assign a random number to each element in arr
+    for i in range(len(arr)):
+        for j in range(len(arr[i])):
+            arr[i][j] = random.randint(0, 9)
 
     print_2d_array(arr)
     find_sum(arr)
